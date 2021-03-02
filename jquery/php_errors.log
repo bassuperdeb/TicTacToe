@@ -1,0 +1,12 @@
+[02-Mar-2021 09:47:59 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php on line 8
+[02-Mar-2021 09:48:24 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php on line 8
+[02-Mar-2021 09:56:43 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\TicTacToe\jquery\load_replay.php on line 8

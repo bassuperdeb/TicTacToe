@@ -1,0 +1,48 @@
+#board {
+    background: blanchedalmond;
+    margin:0 auto;
+    height: 60vh;
+    width: 70%;
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    cursor: pointer;
+}
+#board > div {
+    border: 1px solid black;
+} 
+#board > div:hover{
+    background-color: orange;
+}
+#board > div.player1{
+    background-image:url('./pic/x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+}
+#board > div.player2{
+    background-image:url('./pic/o.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+
+}
+
+@media(max-width:1300px){
+    #board{
+        width: 55% !important;
+    }
+}
+@media(max-width:900px){
+    #result{
+        width: 60% !important;
+    }
+}
+@media(max-width:360px){
+    #result{
+        width: 80% !important;
+    }
+    #board{
+        width: 90% !important;
+    }
+}

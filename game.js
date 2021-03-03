@@ -30,6 +30,7 @@ plates.forEach(function(plate){
             element.classList.add(player);
             log_play.push({'player':player,'width':width,'height':height})
             winner()
+            checkTie()
             testEndgame()
             swift()
         }
@@ -188,10 +189,36 @@ function winner(){
                 status.value  = "1";
             }
 }
-
+function checkTie(){
+    if(endgame !== 1){
+        let array = [];
+        for(h1 = 1 ;h1 <= height ;h1 ++){
+            for(w1 = 1; w1 <= width ; w1++){
+                current = document.querySelector(`#board > div[data-width='${w1}'][data-height='${h1}']`);
+                
+                if(current.classList.contains('player1') ){
+                    array.push('player1');
+                }
+                else if(current.classList.contains('player2') ){
+                    array.push('player2');
+                }
+                else if (!current.classList.contains('player1') && !current.classList.contains('player2')){
+                    array.push('empty');
+                }
+            }      
+        }
+        if(!array.includes("empty")){
+                alert('เสมอ');
+                winnerplay = 'Tie (No winner)';
+                document.querySelector('#turn').innerText = 'Game End';
+                endgame = 2;
+                status.value  = "1";
+        }
+    }
+}
 //test log
 function testEndgame(){
-    if (endgame == 1) {
+    if (endgame == 1 || endgame == 2) {
         log_play = JSON.stringify(log_play);//console.log(log_play1)
         //log_play2 = JSON.stringify(log_play2);//console.log(log_play2)
         document.querySelector('#play').value = log_play;
@@ -200,6 +227,7 @@ function testEndgame(){
         winnerplay = "";
         document.querySelector('#submit').click();
     };
+    
 }
 
 jQuery(function($){

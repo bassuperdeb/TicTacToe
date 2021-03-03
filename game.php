@@ -26,7 +26,7 @@
                 <input type="hidden" id="status" name ="status" value="0">
                 <input type="hidden" id="winner" name ="winner" value="">
                 <input type="hidden" id="play"  name="play" value="">
-                <button type="submit" id = "submit" name ="submit" style="display:none;">dddd</button>
+                <button type="submit" id = "submit" name ="submit" style="display:none;">submit</button>
             </form>
             
             <div id = "regame" style="margin:20px auto;text-align: center; font-size: 2rem;padding: 1rem;width: 30%;background-color: rebeccapurple;color: white;border-radius: 2rem;cursor: pointer;">Restart</div>
